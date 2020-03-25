@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+button {
+    display: block;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 5px solid blue;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: blue;
+    border-color: black;
+    color: white;
+}
+
+div.magic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    transition: 1s;
+}
+
+button:hover+div.magic {
+    width: 150px;
+    height: 150px;
+    top: calc(100% - 150px);
+    left: calc(100% - 150px);
+    background-color: transparent;
+    background-image: url(../img/piłka.jpg);
+    background-position: center;
+    background-size: cover;
+}
